@@ -1,0 +1,48 @@
+body { 
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.container{
+	width: 100%;
+}
+
+.lower_bounds_container{
+	border: 2px rgb(232,242,245) solid;
+	background: rgb(234,240,242);
+	display: inline-block;
+	width: 45%;
+}
+
+.histogram_container{
+	border: 2px rgb(232,242,245) solid;
+	background: rgb(234,240,242);
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+}
+
+.block_title{
+	color:rgb(196,57,48);
+}
+
+.bound{
+	display: inline-block;
+	min-width:10em;
+	height: 2em;
+}
+
+input[type=text] {
+  padding: 10px 3px;
+  margin: 1em 0;
+  box-sizing: border-box;
+}
+
+.grade{
+	background: skyblue;
+	display:inline-block;
+	width: 1em;
+}
+
+#error_message{
+	color:red;
+}

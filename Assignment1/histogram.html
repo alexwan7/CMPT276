@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Historgram Generator</title>
+	<link rel="stylesheet" type="text/css" href="histogram.css"/>
+</head>
+
+<body>
+
+<h1>Historgram Generator</h1>
+
+<div class="container">
+	<div class="lower_bounds_container">
+		<h2 class="block_title">Lower bounds</h2>
+		<ul style="list-style-type:none;">
+		  <li><span class="bound">Max</span> <input onkeyup="change_lower_bound(this)" type="text" id="max" value="100.00"/></li> 
+		  <li><span class="bound">A+</span> <input onkeyup="change_lower_bound(this)" type="text" id="A_plus" value="95.00"/></li>
+		  <li><span class="bound">A</span> <input onkeyup="change_lower_bound(this)" type="text" id="A" value="90.00"/></li>
+		  <li><span class="bound">A-</span> <input onkeyup="change_lower_bound(this)" type="text" id="A_minor" value="85.00"/></li>
+		  <li><span class="bound">B+</span> <input onkeyup="change_lower_bound(this)" type="text" id="B_plus" value="80.00"/></li>
+		  <li><span class="bound">B</span> <input onkeyup="change_lower_bound(this)" type="text" id="B" value="75.00"/></lithis>
+		  <li><span class="bound">B-</span> <input onkeyup="change_lower_bound(this)" type="text" id="B_minor" value="70.00"/></li>
+		  <li><span class="bound">C+</span> <input onkeyup="change_lower_bound(this)" type="text" id="C_plus" value="65.00"/></li>
+		  <li><span class="bound">C</span> <input onkeyup="change_lower_bound(this)" type="text" id="C" value="60.00"/></li>
+		  <li><span class="bound">C-</span> <input onkeyup="change_lower_bound(this)" type="text" id="C_minor" value="55.00"/></li>
+		  <li><span class="bound">D</span> <input onkeyup="change_lower_bound(this)" type="text" id="D" value="50.00"/></li>
+		  <li><span class="bound">F</span> <input onkeyup="change_lower_bound(this)" type="text" id="F" value="0.00"/></li>
+		</ul>
+	</div>
+
+	<div class="histogram_container">
+		<h2 class="block_title">Histogram</h2>
+		<ul style="list-style-type:none;">
+		  <li><span class="bound">A+</span> <span id="A_plus_count"></span></li>
+		  <li><span class="bound">A</span> <span id="A_count"></span></li>
+		  <li><span class="bound">A-</span> <span  id="A_minor_count"></span></li>
+		  <li><span class="bound">B+</span> <span  id="B_plus_count"></span></li>
+		  <li><span class="bound">B</span> <span  id="B_count"></span></li>
+		  <li><span class="bound">B-</span> <span  id="B_minor_count"></span></li>
+		  <li><span class="bound">C+</span> <span  id="C_plus_count"></span></li>
+		  <li><span class="bound">C</span> <span  id="C_count"></span></li>
+		  <li><span class="bound">C-</span> <span  id="C_minor_count"></span></li>
+		  <li><span class="bound">D</span> <span  id="D_count"></span></li>
+		  <li><span class="bound">F</span> <span  id="F_count"></span></li>
+		</ul>
+		<b><div id="error_message"></div></b>
+	</div>
+</div>
+
+</body>
+<script src="calculate.js"></script>
+</html>
