@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<title>CMPT276 - Assignment2</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+</head>
+
+<body>
+    <center>
+    <p style="color:red">I assume all inputs are valid and unique here.</p>
+    <form action="/edit_student_info" method="post">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend"> <span class="input-group-text" id="inputGroup-sizing-default">Student ID(int)<span style="color:red">&nbsp;*</span></span>
+            </div>
+            <input type="text" name="student_id" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" readonly="true" value="<%= results.studentid %>" required> </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend"> <span class="input-group-text" id="inputGroup-sizing-default">Name(varchar)<span style="color:red">&nbsp;*</span></span>
+            </div>
+            <input type="text" name="name" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<%= results.student_name %>" required> </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend"> <span class="input-group-text" id="inputGroup-sizing-default">Height(int)<span style="color:red">&nbsp;*</span></span>
+            </div>
+            <input type="text" name="height" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<%= results.height %>" required> </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend"> <span class="input-group-text" id="inputGroup-sizing-default">Weight(int)<span style="color:red">&nbsp;*</span></span>
+            </div>
+            <input type="text" name="weight" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<%= results.weight %>" required> </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend"> <span class="input-group-text" id="inputGroup-sizing-default">Eye Color(varchar)</span> </div>
+            <input type="text" name="eye_color" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<%= results.hair_color %>"> </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend"> <span class="input-group-text" id="inputGroup-sizing-default">GPA(float)<span style="color:red">&nbsp;*</span></span>
+            </div>
+            <input type="text" name="gpa" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<%= results.gpa %>" required> </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" value="<%= results.studentid %>" id="delete_student">Delete</button>
+            <button type="button" class="btn btn-secondary" onclick="location.href='/'">Cancel</button>
+            <button type="submit" class="btn btn-primary">Change</button>
+        </div>
+    </form>
+    </center>
+</body>
+
+<!--
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+-->
+<script src="/js/main.js"></script>
+<!--<script src="https://kit.fontawesome.com/7bce71d25a.js"></script>-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+</html>
